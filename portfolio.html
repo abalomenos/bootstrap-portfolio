@@ -7,69 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="favicon.ico" rel="shortcut icon">
-
+    
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
 </head>
 <body>
-
-    <nav>
-        <div class="navWrapper">
-            <div class="navLeft">
-                <h1>Aris Balomenos</h1>
-            </div>
-            <div class="navRight">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    
+    <nav class="navbar top-nav-collapse fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <span class="navbar-brand mb-3 h1">Aris Balomenos</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-right">
+                    <a class="nav-item nav-link" href="index.html">About</a>
+                    <a class="nav-item nav-link active" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <section>
-        <div class="portfolio">
-            <h2>Portfolio</h2>
+    <div class="container portfolio mt-0 px-2">
+        <div class="containera">
+            <div class="row">
+                    <div class="col-md-12">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+
             <hr>
-            <ul>
-                <li>
+            <div class="row top-buffer">
+                <div class ="col-md-3 offset-md-2">
                     <a href="#"> <!-- make everything a link -->
                         <p>Hangman</p>
                         <img src="./assets/images/hangman.jpg" height="200" width="270" alt="Hangman">
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class ="col-md-3 offset-md-1">
                     <a href="#"> <!-- make everything a link -->
                         <p>RPG Game</p>
                         <img src="./assets/images/rpg.jpg" height="200" width="270" alt="RPG Game">
                     </a>
-                </li>
-                <li>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class ="col-md-3 offset-md-2">
                     <a href="#"> <!-- make everything a link -->
                         <p>Trivia Game</p>
-                        <img src="./assets/images/trivia.png" height="200" width="270" alt="Trivia Game">
+                        <img class="img-thumbnail" src="./assets/images/trivia.png" height="200" width="270" alt="Trivia Game">
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class ="col-md-3 offset-md-1">
                     <a href="#"> <!-- make everything a link -->
                         <p>Rutgers Info Widget</p>
                         <img src="./assets/images/widget.jpg" height="200" width="270" alt="Rutgers Info Widget">
                     </a>
-                </li>
-                <li>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class ="col-md-3 offset-md-2">
                     <a href="#"> <!-- make everything a link -->
                         <p>Rock Paper Scissors</p>
                         <img src="./assets/images/rps.jpg" height="200" width="270" alt="Rock Paper Scissors">
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         2018 &copy; SkyComTech
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

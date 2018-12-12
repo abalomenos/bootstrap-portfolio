@@ -1,23 +1,4 @@
 
-
-
-
-
-
-
-
-
-.container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: transparent !important;
-}
-
-
-
-
-
 /*------------ Main Structure ------------*/
 
 html {
@@ -25,39 +6,27 @@ html {
 }
 
 body {
-    position: relative;
-    display: block;
-    height: 1000px;
-    overflow-y: scroll;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     font-size: 16px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    line-height: 1.5;
     background-color: transparent !important;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    height: 72px;
-    background-color: #ffffff;
-    border-bottom: 4px solid #cccccc;
-    z-index: 1; 
-    
-}
-
- section {
-    width: 960px;
-    
+.container {
+    max-width: 960px;
     margin: 0 auto;
+    padding: 0;
     background-color: #ffffff;
-    
 }
 
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 10px;
 	color: #cccccc;
 	background-color: #666666;
@@ -65,70 +34,14 @@ footer {
     text-align: center;
 }
 
-/* Standard for all pages */
-/* .about, .contact, .portfolio {
-    position: relative;
-    width: 910; 
-    padding: 25px;
-    margin-bottom: 150px;
-    color: #777777;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-} */
-
-.row{
-    background-color: #ffffff;
-}
-.container.about {
-    padding-top: 150px;
-    color: #777777;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    
-}
-.containera {
-    
-    padding: 50px;
-    color: #777777;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    
-}
-
-
-/* Clearfix hack */
-/* .about,.portfolio,.contact::after{
-    content: "";
-    display: block;
-    clear: both;
-} */
-
-/* Define h1 style */
-/* h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    border-color: #cccccc;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
-
 /* Define h2 style */
-/* h2 {
+h2 {
     font-size: 34px;
     font-weight: bold;
     color: #4aaaa5;
     border-color: #cccccc;
     font-family: Georgia, 'Times New Roman', Times, serif;
-} */
+}
 
 /* Define hr style */
 hr {
@@ -142,78 +55,79 @@ hr {
 
 /*------------ Navigation ------------*/
 
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    border-color: #cccccc;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    background-color: #4aaaa5;
-    padding: 24px 16px;
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 4px solid #cccccc;
 }
 
+nav.navbar {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff !important;
+}
+.navbar-brand.mb-3.h1 {
+    margin: 0 !important;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff !important;
+    border-color: #cccccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #4aaaa5;
+    padding: 28px 16px;
+}
+
+#navbarNavAltMarkup {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-bottom: 0px;
+}
 
 .navbar-nav.navbar-right {
     font-size: 18px;
-    margin: 24px auto;
-    position: relative;
-    right: -24px;
-    transform: translatex(100%);
-    
+    text-align: left !important;
+    background-color: #ffffff;
 }
 
-
-/* Navigation menu items */
-.navWrapper ul li {
-    display: inline-block;
-}
-
-/* Navigation separator | */
-.navWrapper ul li+li {
-	border-left: 1px solid #dddddd;
-}
- 
-/* .navWrapper a {
-    padding: 100% 8px 30px 8px;
-    margin: 10px;
-    text-align: right;
-    text-decoration: none; 
-}
-
-.navWrapper a:link {
+.navbar-nav.navbar-right a:link {
     color: #777777;
+    padding: 32px 16px;
 }
 
-.navWrapper a:visited {
+.navbar-nav.navbar-right a:visited {
     color: #777777;
+    padding: 32px 16px;
 }
 
-.navWrapper a:hover {
-    background-color: #4aaaa5;
+.navbar-nav.navbar-right a:hover {
+    background-color: #ABCCCB;
     color: #ffffff;
+    padding: 32px 16px;
 }
 
-.navWrapper a:active {
-    background-color: #53BFBA;
+.navbar-nav.navbar-right a.active {
+    background-color: #809998;
     color: #ffffff;
-} */
+    padding: 32px 16px;
+}
 
 /*---------- Navigation End ----------*/
 
 
 /*------------ About Page ------------*/
 
-.about p {
+.container.about p {
     text-align: justify;
 }
 
-img.profile {
+.container.about img.profile {
     float: left;
     padding: 10px 20px 20px 0px;
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
 }
 
 /*---------- About Page End ----------*/
@@ -221,24 +135,18 @@ img.profile {
 
 /*------------ Portfolio Page ------------*/
 
-.portfolio ul {
-    width: 610px;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-.portfolio li {
+.container.portfolio a {
     position: relative;
     display: inline-block;
-	width: 270px;
-    height: 200px;
+	width: 272px;
+    height: 202px;
     border: 1px solid #dddddd;
     margin: 15px;
     padding: 0;
     transition: all .2s ease-in-out; /* Scale on Hover with Transition */
 }
 
-.portfolio p {
+.container.portfolio p {
     position: absolute;
     width: 270px;
 	bottom: 50px;
@@ -249,7 +157,7 @@ img.profile {
 }
 
  /* Scale on Hover with Transition */
-.portfolio li:hover {
+.portfolio a:hover {
     transform: scale(1.1);
 }
 
@@ -258,20 +166,8 @@ img.profile {
 
 /*------------ Contact Page ------------*/
 
-.form {
-    width: 910px; /* 960 - 50 from padding */
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
-#contactform {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
 input[type=text], textarea {
-    width: 880px; /* 960 - 50 -30 from padding */
+    width: 100%;
     padding: 15px;
     border: 1px solid #dddddd;
     color: #cccccc;
@@ -283,7 +179,7 @@ textarea {
 }
 
 #submit {
-	background-color: #4aaaa5;
+	background-color: #809998;
 	color: #ffffff;
 	border: none;
     padding: 15px 24px;
@@ -292,7 +188,27 @@ textarea {
 
 #submit:hover
 {
-  background-color: #53BFBA;
+  background-color: #ABCCCB;
 }
 
 /*---------- Contact Page End ----------*/
+
+
+/*------------ Media Queries ------------*/
+
+.container.about, .container.portfolio, .container.contact {
+    padding: 120px 0px;
+}
+
+@media (min-width: 720px) { 
+    .containera {
+        padding: 25px;
+        background-color: #ffffff;        
+    }     
+    .container.about, .container.portfolio, .container.contact{
+        padding: 160px 0px;
+        background-color: transparent !important;
+    }  
+}    
+
+/*---------- Media Queries End ----------*/
