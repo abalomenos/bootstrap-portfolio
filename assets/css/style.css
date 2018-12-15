@@ -22,6 +22,16 @@ body {
     background-color: #ffffff;
 }
 
+.container.about, .container.portfolio, .container.contact {
+    padding: 160px 0px;
+    background-color: transparent;
+}
+
+.containerContent {
+    padding: 25px;
+    background-color: #ffffff;        
+}
+
 footer {
     position: fixed;
     bottom: 0px;
@@ -66,6 +76,7 @@ nav.navbar {
     margin: 0;
     background-color: #ffffff !important;
 }
+
 .navbar-brand.mb-3.h1 {
     margin: 0 !important;
     font-size: 24px;
@@ -93,24 +104,22 @@ nav.navbar {
 }
 
 .navbar-nav.navbar-right a:link {
-    color: #777777;
+    color: #999999;
     padding: 32px 16px;
 }
 
 .navbar-nav.navbar-right a:visited {
-    color: #777777;
+    color: #999999;
     padding: 32px 16px;
 }
 
 .navbar-nav.navbar-right a:hover {
-    background-color: #ABCCCB;
-    color: #ffffff;
+    color: #222222;
     padding: 32px 16px;
 }
 
 .navbar-nav.navbar-right a.active {
-    background-color: #809998;
-    color: #ffffff;
+    color: #222222;
     padding: 32px 16px;
 }
 
@@ -156,6 +165,10 @@ nav.navbar {
 	color: #ffffff;
 }
 
+.container.portfolio .row {
+    text-align: center;
+}
+
  /* Scale on Hover with Transition */
 .portfolio a:hover {
     transform: scale(1.1);
@@ -183,6 +196,7 @@ textarea {
 	color: #ffffff;
 	border: none;
     padding: 15px 24px;
+    border-radius: 4px; /* rounded corners */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Shadow effect */
 }
 
@@ -196,19 +210,35 @@ textarea {
 
 /*------------ Media Queries ------------*/
 
-.container.about, .container.portfolio, .container.contact {
-    padding: 120px 0px;
+@media (max-width: 991px) and (min-width: 1px) { /* Want to apply this to below media query - in order not to repeat the same code.. */
+        
+    .navbar-nav.navbar-right a:hover {
+        background-color: #ABCCCB;
+    }
+    
+    .navbar-nav.navbar-right a.active {
+        background-color: #809998;
+    }
+
 }
 
-@media (min-width: 720px) { 
-    .containera {
-        padding: 25px;
-        background-color: #ffffff;        
-    }     
+@media (max-width: 720px) { 
+    
+    html {
+        background: #ffffff;
+    }
+
+    .containerContent {
+        padding: 0px;      
+    }
+
     .container.about, .container.portfolio, .container.contact{
-        padding: 160px 0px;
-        background-color: transparent !important;
-    }  
-}    
+        padding: 120px 0px;
+        background-color: #ffffff;
+    }
+
+}
+
+
 
 /*---------- Media Queries End ----------*/
