@@ -29,7 +29,7 @@ body {
 
 .containerContent {
     padding: 25px;
-    background-color: #ffffff;        
+    background-color: #ffffff;
 }
 
 footer {
@@ -222,25 +222,25 @@ textarea {
 /*------------ Media Queries ------------*/
 
 @media (max-width: 991px) and (min-width: 1px) { /* Want to apply this to below media query as well - in order not to repeat the same code.. */
-        
+
     .navbar-nav.navbar-right a:hover {
         background-color: #ABCCCB;
     }
-    
+
     .navbar-nav.navbar-right a.active {
         background-color: #809998;
     }
 
 }
 
-@media (max-width: 720px) { 
-    
+@media (max-width: 720px) {
+
     html {
         background: #ffffff;
     }
 
     .containerContent {
-        padding: 0px;      
+        padding: 0px;
     }
 
     .container.about, .container.portfolio, .container.contact{
