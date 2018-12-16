@@ -32,23 +32,31 @@
     </nav>    
 
     <div class="container contact mt-0 px-2">
-        <div class="containerContent">        
-            <h2>Contact</h2>
-            <hr>
-            <div class="form">
-                <form method="post" action="#" name="contactform" id="contactform">
-                    Name
-                    <input name="name" type="text" onfocus="if(this.value == 'John Smith') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'John Smith'; }" value="John Smith">
-                    <br><br>
-                    Email
-                    <input name="email" type="text" onfocus="if(this.value == 'example@gmail.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'example@gmail.com'; }" value="example@gmail.com">
-                    <br><br><br>
-                    Message
-                    <textarea name="comments" type="text" onfocus="if(this.value == 'Type your message...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Type your message...'; }" value="Type your message..."></textarea>
-                    <br><br>
-                    
-                    <input type="submit" id="submit" value="Send Message">
-                </form>
+        <div class="containerContent">
+                <div class="row top-buffer">
+                    <div class ="col-md-12 h2">
+                        <h2>Contact</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class ="col-md-12">
+                        <div class="form">
+                            <form method="post" action="#" name="contactform" id="contactform">
+                                <p>Name</p>
+                                <input name="name" type="text" onfocus="if(this.value == 'John Smith') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'John Smith'; }" value="John Smith">
+                                <br><br>
+                                <p>Email</p>
+                                <input name="email" type="text" onfocus="if(this.value == 'example@gmail.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'example@gmail.com'; }" value="example@gmail.com">
+                                <br><br><br>
+                                <p>Message</p>
+                                <textarea name="comments" type="text" onfocus="if(this.value == 'Type your message...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Type your message...'; }" value="Type your message..."></textarea>
+                                <br><br>
+                                <input type="submit" id="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
