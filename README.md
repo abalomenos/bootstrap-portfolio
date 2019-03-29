@@ -1,2 +1,9 @@
-# bootstrap-portfolio
-2: Responsiveness Assignment
+# Bootstrap Portfolio
+
+This is a responsive professional portfolio site using HTML, CSS and Bootstrap framework.
+
+## Technologies
+
+* HTML
+* CSS
+* Bootstrap
