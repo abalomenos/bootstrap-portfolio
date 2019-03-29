@@ -1,6 +1,6 @@
 # Bootstrap Portfolio
 
-This is a responsive professional portfolio site using HTML, CSS and Bootstrap framework.
+This is a responsive professional portfolio site using HTML, CSS and Bootstrap CSS Framework.
 
 ## Technologies
 
