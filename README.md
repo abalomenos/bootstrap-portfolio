@@ -7,7 +7,7 @@ This is a responsive professional portfolio site using HTML, CSS and Bootstrap C
 
 * HTML
 * CSS
-* Bootstrap
+* Bootstrap CSS Framework
 
 
 ## Demo
